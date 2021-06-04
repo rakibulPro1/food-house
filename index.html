@@ -1,0 +1,535 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food House</title>
+    <!-- ======css======= -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- =========fontawesome link ======== -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- google fonts link  -->
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!--============= header ============ -->
+      <header id="header">
+         <!-- navbar start  -->
+        <nav id="custom_nav" class="navbar navbar-expand-lg  fixed-top">
+          <h3><a href="#" class="logo">Food House</a></h3>       
+           <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse  navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#header">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Our team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#products-section">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sign-section">Signin</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sign-section">Signup</a>
+              </li>
+              </ul>
+          </div>
+        </nav>
+
+        <div class="banner text-center text-light">
+          <h1 class="heading">Welcome to Food House</h1>
+          <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, tempore?</p>
+          <a href="#" class="btn button hvr-right my-4 text-capitalize">Learn more</a>
+        </div>
+       
+      </header>
+    <!-- end of navbar  -
+    <!-- banner  -->
+    
+    <!-- end of banner  -->
+  
+    <!-- =================end of header =========== -->
+    <!-- about section  -->
+    <section id="about" class="py-5 mt-4" >
+      <div class="container">
+        <div class="row my-4">
+          <div class=" col-lg-6 col-md-6 col-sm-12 text-center ">
+            <h1 class="text-uppercase font-weight-bold pb-3 ">About Us</h1>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione saepe ex aperiam tempore totam, culpa vel enim repellat, voluptate natus eos rem accusantium ad illum tenetur quas consectetur dolorem necessitatibus. rem ipsum dolor sit amet consectetur adipisicing elit. Ratione saepe ex aperiam tempore totam, culpa vel enim repellat, voluptate natus eos rem consectetur adipisicing elit. Ratione saepe ex aperiam tempore totam, culpa vel enim repellat, voluptate natus eos rem accusantium ad illum tenetur quas consectetur dolorem necessitatibus</p>
+            <a href="#" class="btn hvr-right my-4 text-capitalize">Know more</a>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 about-images">
+            <img src="assets/food item/lasagna.jpg" alt="" class="img1 img-thumbnail  about-img">
+            <img src="assets/food item/pasta.jpg" alt="" class="img2 img-thumbnail  about-img">
+            <img src="assets/food item/ribs.jpg" alt="" class="img3 img-thumbnail  about-img">
+            <img src="assets/food item/grilled chicken.jpg" alt="" class="img4 img-thumbnail  about-img">
+            <img src="assets/food item/fried rice.jpg" alt="" class="img5 img-thumbnail  about-img">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- en of about section  -->
+
+    <!-- product start  -->
+    <section id="products-section" class="py-5 ">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center pb-5">
+            <h1>Products</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class=" col-lg-6 col-md-6 col-sm-12 ">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-start">
+               
+                <li class="page-item"><a class="page-link" href="#">All</a></li>
+                <li class="page-item"><a class="page-link" href="#">New</a></li>
+                <li class="page-item"><a class="page-link" href="#">Popular</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-end">
+            <form class="form-inline">
+              <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search"
+                aria-label="Search">
+              <a href="#" style="color: black;"><i class="fa fa-search" aria-hidden="true"></i></a>
+            </form>
+          </div>
+        </div>
+        <div id="products" class="row d-flex flex-wrap flex-row justify-content-center products pt-5">
+            <div class="card" style="width: 16rem;">
+              <img src="assets/food item/lasagna.jpg" class="card-img-top zoom" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Lasagna</h5>
+                <span style="font-size:20px; font-weight: bold; color: rgb(2, 255, 192);">$</span><span style="font-size: 32px; font-weight: 600">07</span>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#sign-section" class="btn btn-outline-info">Order Now</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 16rem;">
+              <img src="assets/food item/chimichanga.jpg" class="card-img-top zoom" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Chimichaga</h5>
+                <span style="font-size:20px; font-weight: bold; color: rgb(2, 255, 192);">$</span><span style="font-size: 32px; font-weight: 600">09</span>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#sign-section" class="btn btn-outline-info">Order Now</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 16rem;">
+              <img src="assets/food item/pancakes.jpg" class="card-img-top zoom" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pancakes</h5>
+                <span style="font-size:20px; font-weight: bold; color: rgb(2, 255, 192);">$</span><span style="font-size: 32px; font-weight: 600">05</span>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#sign-section" class="btn btn-outline-info">Order Now</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 16rem;">
+              <img src="assets/food item/pork chops.jpg" class="card-img-top zoom" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pork Chops</h5>
+                <span style="font-size:20px; font-weight: bold; color: rgb(2, 255, 192);">$</span><span style="font-size: 32px; font-weight: 600;">06</span>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#sign-section" class="btn btn-outline-info">Order Now</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 16rem;">
+              <img src="assets/food item/stuffing.jpg" class="card-img-top zoom" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Stuffing</h5>
+                <span style="font-size:20px; font-weight: bold; color: rgb(2, 255, 192);">$</span><span style="font-size: 32px; font-weight: 600">08</span>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#sign-section" class="btn btn-outline-info">Order Now</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 16rem;">
+              <img src="assets/food item/pizza.jpg" class="card-img-top zoom" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pizza</h5>
+                <span style="font-size:20px; font-weight: bold; color: rgb(2, 255, 192);">$</span><span style="font-size: 32px; font-weight: 600">07</span>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#sign-section" class="btn btn-outline-info">Order Now</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 16rem;">
+              <img src="assets/food item/nachos.jpg" class="card-img-top zoom" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Nachos</h5>
+                <span style="font-size:20px; font-weight: bold; color: rgb(2, 255, 192);">$</span><span style="font-size: 32px; font-weight: 600">08</span>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#sign-section" class="btn btn-outline-info">Order Now</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 16rem;">
+              <img src="assets/food item/pulled pork.jpg" class="card-img-top zoom" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pulled Pork</h5>
+                <span style="font-size:20px; font-weight: bold; color: rgb(2, 255, 192);">$</span><span style="font-size: 32px; font-weight: 600">05</span>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#sign-section" class="btn btn-outline-info">Order Now</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 16rem;">
+              <img src="assets/food item/ribs.jpg" class="card-img-top zoom" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Ribs</h5>
+                <span style="font-size:20px; font-weight: bold; color: rgb(2, 255, 192);">$</span><span style="font-size: 32px; font-weight: 600">10</span>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#sign-section" class="btn btn-outline-info">Order Now</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 16rem;">
+              <img src="assets/food item/pumpkin pie.jpg" class="card-img-top zoom" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pumpkin pie</h5>
+                <span style="font-size:20px; font-weight: bold; color: rgb(2, 255, 192);">$</span><span style="font-size: 32px; font-weight: 600">08</span>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#sign-section" class="btn btn-outline-info">Order Now</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 16rem;">
+              <img src="assets/food item/pasta.jpg" class="card-img-top zoom" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pasta</h5>
+                <span style="font-size:20px; font-weight: bold; color: rgb(2, 255, 192);">$</span><span style="font-size: 32px; font-weight: 600">05</span>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#sign-section" class="btn btn-outline-info">Order Now</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 16rem;">
+              <img src="assets/food item/turkey.jpg"class="card-img-top zoom" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Turkey</h5>
+                <span style="font-size:20px; font-weight: bold; color: rgb(2, 255, 192);">$</span><span style="font-size: 32px; font-weight: 600">06</span>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#sign-section" class="btn btn-outline-info">Order Now</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 16rem;">
+              <img src="assets/food item/bread.jpg" class="card-img-top zoom" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bread</h5>
+                <span style="font-size:20px; font-weight: bold; color: rgb(2, 255, 192);">$</span><span style="font-size: 32px; font-weight: 600">04</span>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#sign-section" class="btn btn-outline-info">Order Now</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 16rem;">
+              <img src="assets/food item/calzone.jpg" class="card-img-top zoom" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Calzone</h5>
+                <span style="font-size:20px; font-weight: bold; color: rgb(2, 255, 192);">$</span><span style="font-size: 32px; font-weight: 600">07</span>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#sign-section" class="btn btn-outline-info">Order Now</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 16rem;">
+              <img src="assets/food item/grilled chicken.jpg" class="card-img-top zoom" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Grilled Chicken</h5>
+                <span style="font-size:20px; font-weight: bold; color: rgb(2, 255, 192);">$</span><span style="font-size: 32px; font-weight: 600">06</span>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#sign-section" class="btn btn-outline-info">Order Now</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 16rem;">
+              <img src="assets/food item/fried rice.jpg" class="card-img-top zoom" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Fried rice</h5>
+                <span style="font-size:20px; font-weight: bold; color: rgb(2, 255, 192);">$</span><span style="font-size: 32px; font-weight: 600">09</span>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#sign-section" class="btn btn-outline-info">Order Now</a>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- end of product  -->
+
+
+    <!-- sign in & sign up start  -->
+    <section id="sign-section" class="signin-signup py-5 mx-4">
+      <h1 class="text-center pb-5">Connect With Us Soon</h1>
+      <div class="container" id="container">
+        <div class="row sign-box">
+          <div class="form-container sign-up-container col-md-6 text-center mx-0">
+            <form action="#" class="px-2 py-4">
+              <h1>Creat Account</h1>
+              <div class="social-container">
+                <a href="#" class="social"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                <a href="#" class="social"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                <a href="#" class="social"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#" class="social"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              </div>
+              <span>Or use your email for registration</span><br><br>
+              <input type="text" id="name" class="form-control" placeholder="Name"><br>
+              <input type="email" id="email" class="form-control" placeholder="Email"><br>
+              <input type="password" id="password" class="form-control" placeholder="Password"><br>
+              <button>Sign Up</button>
+            </form>
+          </div>
+
+          <div class="form-container sign-in-container col-md-6 text-center mx-0">
+            <form action="#" class="px-2 py-4">
+              <h1>Sign In</h1>
+              <div class="social-container">
+                <a href="#" class="social"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                <a href="#" class="social"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                <a href="#" class="social"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#" class="social"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              </div>
+              <span>Or use your Account</span><br><br>
+              <input type="email" id="email" class="form-control" placeholder="Email"><br>
+              <input type="password" id="password" class="form-control" placeholder="Password"><br>
+              <a href="#">Forgot Your Password?</a><br>
+              <button class="mt-4">Sign In</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of sign in and sign up -->
+
+    <!-- contact start ====== -->
+    <section id="contact" class="pb-3">
+      <div class="container ">
+        <div class=" text-center py-5">
+          <h1 class="py-3 text-uppercase font-weight-800">Contact Us</h1>
+          <div class="heading-line mx-auto"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <!-- google map  -->
+            <div id="map-container-google-1" class="z-depth-1-half map-container">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2780.6679136607704!2d91.90859651392003!3d22.174412059094447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ad1ed4facbdab1%3A0xe354fefde3fec228!2sSarker%20Hat%20Cattle%20Market!5e1!3m2!1sen!2sbd!4v1593755515815!5m2!1sen!2sbd"  frameborder="0" style="border:0; border-radius: 5px; height: 420px; width: 100%;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+          </div>
+          <form action="" class="col-md-6">
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" class="form-control" placeholder="Enter Your email">
+            </div>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" class="form-control" placeholder="Enter Your name">
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea name="" id="message" class="form-control" rows="5" placeholder="Enter Your message"></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn my-3 btn-primary">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- end of contact ======== -->
+
+   
+    <!-- Footer start -->
+    <footer id="footer" class="footer font-small bg-dark">
+
+      <div style="background-color: #6351ce;">
+        <div class="container">
+
+          <!-- Grid row-->
+          <div class="row py-4 d-flex align-items-center">
+
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+              <h6 class="mb-0">Get connected with us on social networks!</h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+              <!-- Facebook -->
+              <a class="fb-ic">
+                <i class="fa fa-facebook-square white-text mr-4" aria-hidden="true"> </i>
+              </a>
+              <!-- Twitter -->
+              <a class="tw-ic">
+                <i class="fa fa-twitter white-text mr-4 " aria-hidden="true"></i>
+              </a>
+              <!-- Google +-->
+              <a class="gplus-ic">
+                <i class="fa fa-google-plus white-text mr-4" aria-hidden="true"> </i>
+              </a>
+              <!--Linkedin -->
+              <a class="li-ic">
+                <i class="fa fa-linkedin white-text mr-4" aria-hidden="true"> </i>
+              </a>
+              <!--Instagram-->
+              <a class="ins-ic">
+                <i class="fa fa-instagram white-text" aria-hidden="true"> </i>
+              </a>
+
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Grid row-->
+
+        </div>
+      </div>
+
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left mt-5">
+
+        <!-- Grid row -->
+        <div class="row mt-3">
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+            <!-- Content -->
+            <h6 class="text-uppercase font-weight-bold">Food House</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+              consectetur
+              adipisicing elit.</p>
+            <h6 class="text-uppercase font-weight-bold mt-4">Accounts</h6>
+
+              <div class="">
+                <a href="#sign-section">Creat account</a><br>
+                <a href="#sign-section">SignIn</a>
+              </div>
+          </div>
+         
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+            <!-- Links -->
+            <h6 class="text-uppercase font-weight-bold">Products</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+              <a href="#products-section">New</a>
+            </p>
+            <p>
+              <a href="#products-section">Popular</a>
+            </p>
+            <p>
+              <a href="#products-section">Best Sell</a>
+            </p>
+            <div class="mt-4 d-flex justify-content-center">
+              <form class="form-inline">
+                <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search"
+                  aria-label="Search">
+                <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+              </form>
+            </div>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+            <!-- Links -->
+            <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+              <a href="#header">Home</a>
+            </p>
+            <p>
+              <a href="#about">About</a>
+            </p>
+            <p>
+              <a href="#products-section">Products</a>
+            </p>
+            <p>
+              <a href="#sign-section">Price</a>
+            </p>
+            <p>
+              <a href="#contact">Contact</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+            <!-- Links -->
+            <h6 class="text-uppercase font-weight-bold">Contact</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+              <i class="fa fa-home mr-3"></i> Anowara 27 no-road, Chittagong, Bangladesh</p>
+            <p>
+              <i class="fa fa-envelope mr-3"></i> rakibul102760@gmail.com</p>
+            <p>
+              <i class="fa fa-phone mr-3"></i> 01851-258931</p>
+            <p>
+              <i class="fa fa-print mr-3"></i> 01685300645</p>
+              
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+      </div>
+      <!-- Footer Links -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="#"> Rakibul islam</a>
+      </div>
+      <div class="text-right">
+        <h6 class="pb-4 pr-3">Developed by Rakibul islam</h6>
+      </div>
+  <!-- Copyright -->
+
+    </footer>
+    <!--end of Footer -->
+
+
+    <!-- back to top button  -->
+    <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fa fa-chevron-up"></i></a>
+    <!-- back to top button  -->
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

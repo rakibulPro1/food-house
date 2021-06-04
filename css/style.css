@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Comic Neue', cursive;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* header start  */
+header{
+    background: url("../assets/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+/* navbar  */
+.menu_fixed{
+    background: rgba(0, 0, 0, 0.5);
+    transition: 1s ease-in-out;
+    top: -50px;
+
+}
+
+nav h3 a{
+    color: white;
+    padding-left: 30px;
+}
+/* media query  */
+@media (max-width: 576px){
+    nav h3 a{
+        font-size: 24px;
+        padding-left: 10px;
+    }
+
+}
+
+.navbar .navbar-nav{
+    padding: 0px 50px;
+}
+.navbar .nav-item{
+    padding: 5px 10px;
+}
+.navbar .nav-item a{
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+/* navbar end  */
+.banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.heading{
+    animation-name: slide-heading;
+    animation-duration: 2s;
+}
+.para{
+    animation-name: slide-para;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+}
+.banner .btn{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid white;
+    padding: 8px 15px;
+    margin: 40px 0;
+    transition: all 2s ease;
+    animation-name: slide-button;
+    animation-duration: 2s;
+}
+.banner .btn:hover{
+    transform: rotate(360deg);   
+}
+
+/* aimation keyframes */
+@keyframes slide-heading{
+    0%{
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-para{
+    0%{
+        transform: translatex(-1000px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatex(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-button{
+    0%{
+        transform: translateY(1000px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/*  and of aimation keyframes */
+/* header end  */
+
+/* about start  */
+#about{
+    background-color: black;
+    color: white;
+    
+   
+    /* height: 100vh; */
+   
+}
+.text{
+    font-size: 20px;
+}
+.about-images{
+    position: relative;
+}
+.about-img{
+    position: absolute;
+    width: 200px;
+    transition: all 2s ease;
+    opacity: 0.9;
+}
+.img1{
+    left: 0%;
+    top: 0%;
+}
+.img2{
+    left: 20%;
+    top: 20%;
+    z-index: 10;
+}
+.img3{
+    left: 40%;
+    top: 45%;
+    z-index: 20;
+}
+.img4{
+    left: 40%;
+    top: 0%;
+    
+}
+.img5{
+    left: 0%;
+    top: 45%;
+}
+.about-img:hover{
+    outline: 10px solid #dbc1ac;
+    outline-offset: 20px;
+    transform: scale(1.3) rotate(360deg);
+    z-index: 30;
+    opacity: 1;
+}
+.about-images:hover,
+.about-img:not(:hover){
+    
+}
+#about .btn{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid white;
+    padding: 8px 15px;
+    margin: 40px 0;
+    transition: all 2s ease;
+}
+#about .btn:hover{
+    transform: rotate(360deg);   
+}
+/* about end  */
+
+/* product start  */
+
+.buttongroup{
+    display: flex;
+}
+
+.card{
+    margin: 10px;
+}
+.card-body{
+    text-align: center;
+}
+
+.card .btn:hover{
+    background-color: #eee;
+    border: none;
+    color: black;
+}
+.zoom{
+    transition: transform 0.5s ease-in-out;
+    
+}
+.zoom:hover{
+    transform: scale(1.1);
+    overflow: hidden;
+}
+/* prodect end  */
+
+/* sign and signup  start */
+
+.signin-signup .container{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 3px 8px -1px rgba(0,0,0,0.62);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+.signin-signup p{
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin-right: 20px 0 30px;
+}
+.signin-signup span{
+    font-size: 12px;
+}
+.signin-signup a{
+    color: #333;
+    font-size: 14px;
+    margin: 15px 0;
+    text-decoration: none;
+}
+.signin-signup .social-container{
+    margin: 20px 0;
+}
+.signin-signup .social-container a{
+    border: 1px solid #ddd;
+    border-radius: 20%;
+    margin: 0px 5px;
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+}
+.signin-signup input{
+    background-color: #eee;
+    border: none;
+}
+
+.signin-signup button{
+    border-radius: 20px;
+    border: 1px solid #ff4b2b;
+    background-color: #ff4b2b;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 45px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 80ms easein;
+}
+.signin-signup button:active{
+    transform: scale(0.95);
+}
+.signin-signup button:focus{
+    outline: none;
+}
+.form-container{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+/* .nav-link:hover{
+    border-bottom: 2px solid white;
+    transition: 0.5s ease-in-out;
+
+} */
+input:active{
+    border: none !important;
+}
+
+
+
+
+ /* end of sign in and sign up  */
+
+/* contact start  */
+/* #contact{
+    color: white;
+    background-color: black;
+    margin: 30px 0;
+} */
+
+form label {
+    font-weight: bold;
+}
+#contact .btn{
+    
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px;
+    margin: 40px 0;
+    transition: all 2s ease;
+}
+#contact .btn:hover{
+    transform: rotate(360deg);
+    color: rgb(0, 255, 200);
+    color: black;  
+}
+#contact input{
+    background-color: #eee;
+    border: none;
+}
+#contact textarea{
+    background-color: #eee;
+    border: none;
+}
+
+/* end of contact  */
+
+/* footer start  */
+.footer{
+    color: White;
+}
+.footer a{
+    color: white;
+    text-decoration: none;
+}
+/* end of footer  */
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+    
+}
